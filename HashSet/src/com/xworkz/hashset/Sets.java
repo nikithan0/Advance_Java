@@ -1,4 +1,4 @@
-package com.xworkz.hashsetproject;
+package com.xworkz.hashset;
 
 import java.util.HashMap;
 import java.util.HashSet;
