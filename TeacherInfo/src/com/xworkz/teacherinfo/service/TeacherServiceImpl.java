@@ -51,6 +51,7 @@ public class TeacherServiceImpl implements TeacherService {
 	public boolean update(Integer key, String qualification) {
 		if (key != 0) {
 			if (qualification != null) {
+				dao.update(key, qualification);
 				return true;
 			}
 		}

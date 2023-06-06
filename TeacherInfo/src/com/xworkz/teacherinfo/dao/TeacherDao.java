@@ -10,5 +10,6 @@ public interface TeacherDao {
 	public boolean update(Integer key, String graduation);
 	
 	public boolean delete(Integer key);
+	
 	//public TeacherDto read();
 }
