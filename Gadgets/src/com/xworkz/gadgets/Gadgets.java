@@ -30,7 +30,11 @@ public class Gadgets {
 		ref.put(204, "Smart phone");
 		ref.put(205, "Mouse");
 		
-		
+		System.out.println(ref.firstEntry());
+		System.out.println(ref.containsKey(205));
+		System.out.println(ref.equals(ref));
+		System.out.println(ref.values());
+	
 		
 		
 		
