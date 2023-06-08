@@ -1,5 +1,8 @@
 package com.xworkz.teacherinfo.service;
 
+import java.util.HashMap;
+
+
 import com.xworkz.teacherinfo.dao.TeacherDaoImpl;
 import com.xworkz.teacherinfo.dto.TeacherDto;
 
@@ -68,5 +71,14 @@ public class TeacherServiceImpl implements TeacherService {
 		}
 		return false;
 	}
+
+	@Override
+	public HashMap<Integer, TeacherDto> readAll() {
+		
+		return dao.readAll();
+	}
+
+	
+	
 
 }

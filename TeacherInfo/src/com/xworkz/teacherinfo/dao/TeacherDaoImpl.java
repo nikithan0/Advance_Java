@@ -34,6 +34,15 @@ public class TeacherDaoImpl implements TeacherDao {
 			System.out.println(ref.get(key));
 			return true;
 		}
+
+	@Override
+	public HashMap<Integer, TeacherDto> readAll() {
+		
+		return ref;
+	}
+
+	
+	
 		
 	
 

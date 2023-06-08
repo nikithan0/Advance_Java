@@ -1,5 +1,8 @@
 package com.xworkz.teacherinfo.dao;
 
+import java.util.HashMap;
+
+
 import com.xworkz.teacherinfo.dto.TeacherDto;
 
 public interface TeacherDao {
@@ -11,5 +14,7 @@ public interface TeacherDao {
 	
 	public boolean delete(Integer key);
 	
-	//public TeacherDto read();
+	public HashMap<Integer, TeacherDto> readAll();
+	
+
 }
