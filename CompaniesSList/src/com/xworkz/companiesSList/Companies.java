@@ -50,7 +50,10 @@ public class Companies {
 
 	
 	  
-		
+		list.sort(cmp);
+		for (String ref: list) {
+			System.out.println(ref);
+		}
 	}
 
 }
