@@ -1,7 +1,9 @@
 package com.xworkz.companiesSList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
+
 
 
 public class Companies {
@@ -31,10 +33,10 @@ public class Companies {
 		list.add("Google");
 		list.add("Asus");
 		
-		for(String str : list) {
-			System.out.println(str);
-		}
-		
+//		for(String str : list) {
+//			System.out.println(str);
+//		}
+//		
 	  Comparator<String> cmp = new Comparator<String>() {
 		 
 		
@@ -48,9 +50,9 @@ public class Companies {
 		
 	};
 
-	
+	   // list.sort(cmp);
 	  
-		list.sort(cmp);
+		Collections.sort(list,cmp);
 		for (String ref: list) {
 			System.out.println(ref);
 		}
