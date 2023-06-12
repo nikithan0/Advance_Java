@@ -30,10 +30,10 @@ public class ElectronicsRunner {
 		List<ElectronicsDto> list = Arrays.asList(dto, dto1, dto2, dto3, dto4, dto5, dto6, dto7, dto8, dto9);
 		
 
-//		PriceComparator pComp = new PriceComparator();
-//		
-//		DateComparator dComp = new DateComparator();
-//		
+		PriceComparator pComp = new PriceComparator();
+		
+		DateComparator dComp = new DateComparator();
+		
 		WarrantyComparator wComp = new WarrantyComparator();
 		
 		Collections.sort(list,wComp);
