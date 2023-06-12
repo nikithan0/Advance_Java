@@ -36,7 +36,7 @@ public class ElectronicsRunner {
 		
 		WarrantyComparator wComp = new WarrantyComparator();
 		
-		Collections.sort(list,wComp);
+		Collections.sort(list,pComp);
 		for (ElectronicsDto eDto : list) {
 			System.out.println(eDto);
 			
