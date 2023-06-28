@@ -5,22 +5,22 @@ import java.util.Set;
 
 import com.xworkz.institute.dto.InstituteDto;
 
-public class InstituteDaoImpl implements InstituteDao{
-	
-	HashMap<Integer, InstituteDto> map =new HashMap<Integer, InstituteDto>();
+public class InstituteDaoImpl implements InstituteDao {
+
+	HashMap<Integer, InstituteDto> map = new HashMap<Integer, InstituteDto>();
 
 	@Override
 	public boolean save(Integer id, InstituteDto dto) {
-		map.put(id,dto);	
+		map.put(id, dto);
 		return true;
 	}
-	
+
 	@Override
 	public boolean findByName(String name) {
 		Set<Integer> keys = map.keySet();
-		for(Integer key : keys) {
+		for (Integer key : keys) {
 			InstituteDto dto = map.get(key);
-			if(dto.getName().equals(name)) {
+			if (dto.getName().equals(name)) {
 				return true;
 			}
 		}
@@ -41,9 +41,8 @@ public class InstituteDaoImpl implements InstituteDao{
 		return true;
 	}
 
-
 	@Override
-	public HashMap<Integer, InstituteDto> read() {		
+	public HashMap<Integer, InstituteDto> read() {
 		return map;
-	}	
+	}
 }
