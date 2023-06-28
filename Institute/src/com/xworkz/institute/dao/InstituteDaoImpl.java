@@ -30,7 +30,7 @@ public class InstituteDaoImpl implements InstituteDao{
 	@Override
 	public boolean updateByPrice(Integer key, int price) {
 		InstituteDto update = map.get(key);
-		
+		System.out.println(update);
 		return true;
 	}
 
