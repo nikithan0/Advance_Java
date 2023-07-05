@@ -28,6 +28,8 @@ public class FacebookServiceImpl implements FacebookService{
 		 Validator validator = factory.getValidator();
 		   Set<ConstraintViolation<FacebookDto>>  violation= validator.validate(dto);
 		   
+		  
+		   
 		   
 		   if(violation.isEmpty()) {
 				repo.validateAndSave(dto);
