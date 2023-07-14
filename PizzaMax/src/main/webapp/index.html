@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pizza Max</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+.navbar-brand {
+	padding-left: 400px;
+	color: black;
+}
+</style>
+
+<script>
+	function register() {
+		console.log("Calling register function");
+
+		var regButton = document.getElementById("regButton")
+		regButton.style.backgroundColor = 'red'
+		regButton.style.color = 'white'
+
+		var pizzaName = document.getElementById("PizzaName")
+		console.log(pizzaName.value)
+		var pizzaNameMessage = document.getElementById("pizzaNameMessage")
+		pizzaNameMessage.innerHTML = ''
+		if (pizzaName.value == ' ') {
+			console.log("Please select the Pizza")
+
+			pizzaNameMessage.innerHTML = "Please select the your Pizza"
+			pizzaNameMessage.style.color = 'red'
+
+			return false
+		}
+		var typeMessage = document.getElementById("type message")
+		console.log(document.pizzaOrdering.type.value)
+		typeMessage.innerHTML = ''
+		if (document.pizzaOrdering.type.value == '0') {
+			console.log("Select the type")
+			typeMessage.innertHTML = "Select the type"
+			typeMessage.style.color = "red"
+			return false
+		}
+
+		var location = documnet.getElementById("location")
+		console.log(location.value)
+		var locationMessage = documnent.getElementById("locationMessage")
+		locationMessage.innerHTML = ' '
+		if (location.value == ' ') {
+			console.log("Please enter your location")
+
+			locationMessage.innetHTML = "Please Enter your location"
+			locationMessage.style.color = 'red'
+			return false
+		}
+
+		var paymentModeMessage = document.getElementById("paymentModeMessage")
+		console.log(document.pizzaOrdering.paymentmode.value)
+		paymentModeMessage.innerHTML = ' '
+		if (document.pizzaOrdering.paymentmode.value) {
+			console.log("Please select the payement mode")
+			paymentModeMessage.innerHTML = "Please select the payement mode"
+			paymentModeMessage.style.color = 'red'
+
+		}
+
+	}
+</script>
+
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-nd bg-danger navbar-white">
+		<a class="navbar-brand" href="#">Pizza Max</a>
+
+		<!-- Toggler/collapsible Button -->
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+	<br>
+
+	<form action="send" name="pizzaOrdering" method="post">
+
+		<div class="form-group">
+			<label for="text">Pizza name</label> <input type="text"
+				name="pizzaName" class="form-control"
+				placeholder="Name of the Pizza" id="PizzaName"> <span
+				id="pizzaNameMessage"></span>
+		</div>
+
+		<div class="form-group">
+			<label>Select type</label> <select name="type">
+				<option value='0'>-----Select type-----</option>
+				<option>Pizza Margherita</option>
+				<option>Quick Tomato pizza</option>
+				<option>Urappam Pizza</option>
+				<option>Pizza in a pan</option>
+				<option>Tandoori pizza</option>
+			</select><span id="type message"> </span>
+		</div>
+
+		<div class="form-group">
+			<label for="text">Location</label>
+			<textarea class="form-control" name="location" rows="4" id="location" placeholder="Enter your location"></textarea>
+			<span id="locationMessage"></span>
+		</div>
+
+		<div class="form-group">
+			<label>Payment mode</label> <select name="paymentmode">
+				<option value='0'>---Select payment mode---</option>
+				<option>Cash on Delivery</option>
+				<option>UPI</option>
+				<option>Debit card</option>
+				<option>Credit Card</option>
+			</select><span id="paymentModeMessage"></span>
+		</div>
+		<br>
+
+		<button type="Submit" onclick="register()" class="btn btn-danger"
+			id="regButton">Submit</button>
+	</form>
+
+
+
+</body>
+</html>

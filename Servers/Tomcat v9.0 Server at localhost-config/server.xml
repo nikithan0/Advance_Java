@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Boring" path="/Boring" reloadable="true" source="org.eclipse.jst.jee.server:Boring"/></Host>
+      <Context docBase="Boring" path="/Boring" reloadable="true" source="org.eclipse.jst.jee.server:Boring"/><Context docBase="xworkz" path="/xworkz" reloadable="true" source="org.eclipse.jst.jee.server:xworkz"/><Context docBase="institutes" path="/institutes" reloadable="true" source="org.eclipse.jst.jee.server:institutes"/><Context docBase="naukri" path="/naukri" reloadable="true" source="org.eclipse.jst.jee.server:naukri"/><Context docBase="telegram" path="/telegram" reloadable="true" source="org.eclipse.jst.jee.server:telegram"/><Context docBase="inshort" path="/inshort" reloadable="true" source="org.eclipse.jst.jee.server:inshort"/><Context docBase="resumee" path="/resumee" reloadable="true" source="org.eclipse.jst.jee.server:resumee"/><Context docBase="PizzaMax" path="/PizzaMax" reloadable="true" source="org.eclipse.jst.jee.server:PizzaMax"/><Context docBase="cosmetics" path="/cosmetics" reloadable="true" source="org.eclipse.jst.jee.server:cosmetics"/></Host>
     </Engine>
   </Service>
 </Server>
