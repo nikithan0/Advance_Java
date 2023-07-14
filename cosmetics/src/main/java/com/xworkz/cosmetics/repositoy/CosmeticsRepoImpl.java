@@ -86,7 +86,7 @@ public class CosmeticsRepoImpl implements CosmeticsRepository {
 				return false;
 			}
 			statement.close();
-			con.close(); 
+			con.close();  
 
 		} catch (SQLException e) {
 			e.printStackTrace();
