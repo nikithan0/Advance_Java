@@ -46,7 +46,7 @@ public class CosmeticsServlets extends HttpServlet{
 		PrintWriter writer = resp.getWriter();
 		//writer.println(dto);
 		
-		//writer.println("<h1>Welcome                 "+ "<u>"+name+"</u>"+ " choose your Favourites..</h1>");
+		writer.println("<h1>Welcome                 "+ "<u>"+name+"</u>"+ " choose your Favourites..</h1>");
 		writer.println(find);
 		
 	}
