@@ -25,15 +25,15 @@ public class LaptopRunner {
 //		boolean update = service.update(dto2);
 //		System.out.println(update);
 //		
-		System.out.println("----------------------------------------------------------");
+//		System.out.println("---------------------delete by id-------------------------------------");
+//
+//		boolean deleting = service.delete(dto3);
+//		System.out.println(deleting);
 
-		boolean deleting = service.delete(dto3);
-		System.out.println(deleting);
+//		System.out.println("----------------------delete------------------------------------");
 
-		System.out.println("----------------------------------------------------------");
-
-		boolean delete = service.delete(dto1);
-		System.out.println(delete);
+//		boolean delete = service.delete(dto1);
+//		System.out.println(delete);
 
 		System.out.println("----------------------------------------------------------");
 
